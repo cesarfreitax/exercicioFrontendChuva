@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+/* Posicionamento dos itens na tela */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userHeader {
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+.userImg img {
+    height: 30px;
+}
+
+/* Estilizacao dos itens */
+
+.titleHeader h2, h1 {
+    color: #725C5C;
+    ;
+
+}
+
+header {
+    background: #FDF1EB;
+}
+
+h1 {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.languageHeader select {
+    background: #FDF1EB;
+}
