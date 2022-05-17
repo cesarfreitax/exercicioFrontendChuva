@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 .userHeader {
@@ -20,13 +21,39 @@ header {
     height: 30px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titleAndVideo {
+    max-width: 70%;
+}
+
+.titleAndVideo video {
+    width: 100%;
+}
+
+.buttonsAndDetails {
+    margin: 2%;
+}
+
+.details p{
+    padding: 2%;
+}
+
 /* Estilizacao dos itens */
 
 .titleHeader h2, h1 {
     color: #725C5C;
     ;
-
 }
+
 
 header {
     background: #FDF1EB;
@@ -44,4 +71,30 @@ h2 {
 
 .languageHeader select {
     background: #FDF1EB;
+}
+
+.titleAndVideo h1 {
+    color:#ED7839;
+    font-weight: bolder;
+}
+
+.buttons button {
+    background-color: #ED7839;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+.comoCitar {
+    color: #ED7839;;
+}
+
+.details {
+    border: 1px solid #ECECEC;
+}
+
+.details h1 {
+    background: #FDF1EB;
+    
 }
