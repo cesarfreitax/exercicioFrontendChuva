@@ -4,6 +4,11 @@
 
 /* Posicionamento dos itens na tela */
 
+aside {
+    float: left;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -48,6 +53,29 @@ main {
 }
 
 /* Estilizacao dos itens */
+
+aside {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+aside p {
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 3vh;
+    font-weight: bold;
+}
+
+aside nav li {
+    list-style: none;
+}
+
+aside nav li a {
+    text-decoration: none;
+    color: #725C5C;
+    font-size: 1.1rem;
+}
 
 .titleHeader h2, h1 {
     color: #725C5C;
@@ -97,4 +125,43 @@ h2 {
 .details h1 {
     background: #FDF1EB;
     
+}
+
+.moreTextBtn {
+    color:#ED7839;
+    font-weight: bolder;
+}
+
+
+.details h3 {
+    color: #ED7839;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details p {
+    text-align: center;
+}
+
+.details button {
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    font-size: 1.2rem;
+    padding: 0.6vh;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Ajustes para eventos no JavaScript */
+
+.moreText {
+    display: none;
+}
+
+.text.showMore .moreText {
+    display: flex;
+}
+
+.text.showMore .dots {
+    display: none;
 }
