@@ -2,18 +2,40 @@
     margin: 0;
 }
 
+/* Fontes */
+
+.details p, .resume p, .discuss p, .topicCreated p {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* Posicionamento dos itens na tela */
 
+body {
+    display: flex;
+}
+
+.headerMainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
 aside {
-    float: left;
-    min-height: 100vh;
+    width: 90vh;
+}
+
+aside img {
+    max-width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 0.2rem;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .userHeader {
@@ -23,7 +45,7 @@ header {
 }
 
 .userImg img {
-    height: 30px;
+    height: 2rem;
 }
 
 main {
@@ -34,22 +56,41 @@ main {
 .mainContainer {
     display: flex;
     justify-content: space-around;
+    max-width: 100%;
 }
 
 .titleAndVideo {
-    max-width: 70%;
+    max-width: 50%;
+}
+
+.titleAndVideo h1 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
 }
 
 .titleAndVideo video {
-    width: 100%;
+    max-width: 100%;
+    margin: 0.5rem;
 }
 
 .buttonsAndDetails {
     margin: 2%;
 }
 
+.buttons {
+    margin-left: 40%;
+}
+
+.comoCitar {
+    margin-left: 40%;
+}
+
 .details p{
-    padding: 2%;
+    padding: 0.5rem;
+}
+
+.details, .resume, .discuss, .newTopic {
+    margin: 0.5rem 2rem;
 }
 
 /* Estilizacao dos itens */
@@ -60,11 +101,11 @@ aside {
 
 aside p {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
-    font-size: 2rem;
+    font-size: calc(1vw + 1rem);
     color: #FFFFFF;
     text-align: center;
-    padding: 3vh;
-    font-weight: bold;
+    padding: 1rem;
+    font-weight: bolder;
 }
 
 aside nav li {
@@ -79,7 +120,15 @@ aside nav li a {
 
 .titleHeader h2, h1 {
     color: #725C5C;
-    ;
+}
+
+.titleHeader h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titleHeader h2, .userHeader h2, .userHeader p {
+    font-size: 1rem;
 }
 
 
@@ -87,18 +136,16 @@ header {
     background: #FDF1EB;
 }
 
-h1 {
-    font-size: 22px;
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+.languageHeader {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 0.5vh;
+    display: flex;
 }
 
 .languageHeader select {
     background: #FDF1EB;
+    border: none;
 }
 
 .titleAndVideo h1 {
@@ -111,22 +158,42 @@ h2 {
     border: none;
     border-radius: 5px;
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.buttonsAndDetails .buttons button {
+    padding: 1% 4%;
 }
 
 .comoCitar {
-    color: #ED7839;;
+    color: #ED7839;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.5rem;
 }
 
-.details, .resume, .discuss {
+.details, .resume, .discuss, .newTopic, .topicCreated {
     border: 1px solid #ECECEC;
     display: flex;
     flex-direction: column;
 }
 
-.details h1, .resume h1, .discuss h1 {
+.details h1, .resume h1, .discuss h1, .newTopic h1, .topicCreated h1 {
     background: #FDF1EB;
-    
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+.resume p, .discuss p, .discuss h3, .newTopic p, .newTopic h2 {
+    padding: 0.5rem;
+}
+
+.assunto {
+    height: 2rem;
+}
+
+.conteudo {
+    height: 5rem;
 }
 
 .moreTextBtn {
@@ -135,10 +202,11 @@ h2 {
 }
 
 
-.discuss h3 {
+.discuss h3, .topicCreated h3 {
     color: #ED7839;
     font-weight: bold;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .discuss p {
@@ -156,6 +224,25 @@ h2 {
     width: 18vh;
     align-self: center;
 }
+
+.newTopic h2 {
+    color: #ED7839;
+    font-weight: bold;
+}
+
+/* Ajustes para dispositivos móveis */
+
+@media (max-width:991px) {
+    aside p {
+        font-size: calc(1vw + 1.5rem);
+    }
+
+    /* .titleAndVideo h1 {
+        font-size: calc(1vw + 1.2rem);
+    } */
+
+}
+
 
 /* Ajustes para eventos no JavaScript */
 
